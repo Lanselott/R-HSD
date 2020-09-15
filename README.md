@@ -2,14 +2,18 @@
 # Region Based Hotspot Detection
 Source code of paper: (DAC2019 / TCAD2020) Faster Region-based Hotspot Detection.
 
-@inproceedings{chen2019faster,
-  title={Faster region-based hotspot detection},
-  author={Chen, Ran and Zhong, Wei and Yang, Haoyu and Geng, Hao and Zeng, Xuan and Yu, Bei},
-  booktitle={2019 56th ACM/IEEE Design Automation Conference (DAC)},
-  pages={1--6},
-  year={2019},
-  organization={IEEE}
-}
+### Citing 
+
+If you find this repo useful in your research, please consider citing:
+
+    @inproceedings{chen2019faster,
+      title={Faster region-based hotspot detection},
+      author={Chen, Ran and Zhong, Wei and Yang, Haoyu and Geng, Hao and Zeng, Xuan and Yu, Bei},
+      booktitle={2019 56th ACM/IEEE Design Automation Conference (DAC)},
+      pages={1--6},
+      year={2019},
+      organization={IEEE}
+    }
 
 ## Maintainers
 CHEN Ran (chenran1995@link.cuhk.edu.hk)
