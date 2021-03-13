@@ -60,8 +60,8 @@ def data_generator(index,
 
     if index == 4:
         move_step = 128
-    if benchmark_name is 'iccad16':
-        width = width / 2
+    # if benchmark_name is 'iccad16':
+    #     width = width / 2
 
     #NOTE: no random in eval part, crop one by one
     for k in range(height / move_step + 1):
@@ -248,10 +248,11 @@ def data_generator(index,
 
 if __name__ == '__main__':
     state = 'eval'
+    ##apply_overlap = True means that one clip may overlap with another one.
     apply_overlap = False  # True
-    merged_samples = True
+    merged_samples = False
     subset_nums = 3000
-    benchmark_name = 'iccad12'  #'iccad16'
+    benchmark_name = 'iccad16'  #'iccad12'
     data_path = './benchmark/temp/'
 
     if merged_samples:
@@ -272,7 +273,7 @@ if __name__ == '__main__':
         tfrecord_name = 'hsd_od_' + state + '.record'
 
     writer = tf.python_io.TFRecordWriter(
-        '/research/byu2/rchen/proj/cuhsd/hsd-od/benchmark/tfrecord/' +
+        './benchmark/tfrecord/' +
         tfrecord_name)
 
     for iccad_index in iccad_benchmark_list:
